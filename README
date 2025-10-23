@@ -1,0 +1,39 @@
+🛒 Shopping Cart (TDD)
+
+Un module simple de gestion de panier e-commerce, développé en TDD
+(Test Driven Development : RED → GREEN → REFACTOR).
+
+linux Fonctionnalités
+
+-Ajout et suppression de produits (nom + prix)
+
+-Application d’une remise en pourcentage
+
+-Gestion d’erreurs (prix négatif → InvalidPriceError)
+
+-Sauvegarde et chargement du panier au format JSON
+
+-Historique des sauvegardes horodatées dans /archives
+
+-Tests unitaires complets avec pytest
+
+-Mock du système de fichiers (aucun accès disque réel)
+
+-Refactor propre avec @dataclass Product
+
+
+Installation & exécution des tests
+    Installer les dépendances:
+        pip install pytest coverage
+
+Lancer tous les tests:
+    python -m pytest -q
+Tous les tests doivent passer.
+
+-Générer le rapport de couverture-
+python -m coverage run -m pytest -q
+python -m coverage html
+
+Ouvre ensuite le fichier :
+
+htmlcov/index.html
