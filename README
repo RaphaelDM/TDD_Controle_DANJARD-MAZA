@@ -1,3 +1,4 @@
+[![tests](https://github.com/RaphaelDM/TDD_Controle_DANJARD-MAZA/actions/workflows/tests.yml/badge.svg)](https://github.com/RaphaelDM/TDD_Controle_DANJARD-MAZA/actions/workflows/tests.yml)
 🛒 Shopping Cart (TDD)
 
 Un module simple de gestion de panier e-commerce, développé en TDD
