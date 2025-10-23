@@ -31,7 +31,7 @@ Lancer tous les tests :
 ```bash
 python -m pytest -q
 ```
-Pour plus detaile
+Pour plus de détail
 
 ```bash
 python -m pytest -v 
