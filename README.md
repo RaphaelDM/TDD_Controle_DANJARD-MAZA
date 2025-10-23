@@ -31,6 +31,11 @@ Lancer tous les tests :
 ```bash
 python -m pytest -q
 ```
+Pour plus detaile
+
+```bash
+python -m pytest -v 
+```
 
 Tous les tests doivent passer.
 
@@ -39,7 +44,7 @@ Tous les tests doivent passer.
 Générer le rapport de couverture :
 
 ```bash
-python -m coverage run -m pytest -q
+python -m coverage run -m pytest -q 
 python -m coverage html
 ```
 
