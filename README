@@ -1,40 +1,50 @@
+# 🛒 Shopping Cart (TDD)
+
 [![tests](https://github.com/RaphaelDM/TDD_Controle_DANJARD-MAZA/actions/workflows/tests.yml/badge.svg)](https://github.com/RaphaelDM/TDD_Controle_DANJARD-MAZA/actions/workflows/tests.yml)
-🛒 Shopping Cart (TDD)
 
 Un module simple de gestion de panier e-commerce, développé en TDD
 (Test Driven Development : RED → GREEN → REFACTOR).
 
-linux Fonctionnalités
+## Fonctionnalités principales
 
--Ajout et suppression de produits (nom + prix)
+- Ajout et suppression de produits (nom + prix)
+- Application d’une remise en pourcentage
+- Gestion d’erreurs (prix négatif → `InvalidPriceError`)
+- Sauvegarde et chargement du panier au format JSON
+- Historique des sauvegardes horodatées dans `/archives`
+- Tests unitaires complets avec `pytest`
+- Mock du système de fichiers (aucun accès disque réel)
+- Refactor propre avec `@dataclass` `Product`
 
--Application d’une remise en pourcentage
+## Installation
 
--Gestion d’erreurs (prix négatif → InvalidPriceError)
+Installer les dépendances :
 
--Sauvegarde et chargement du panier au format JSON
+```bash
+pip install pytest coverage
+```
 
--Historique des sauvegardes horodatées dans /archives
+## Exécution des tests
 
--Tests unitaires complets avec pytest
+Lancer tous les tests :
 
--Mock du système de fichiers (aucun accès disque réel)
+```bash
+python -m pytest -q
+```
 
--Refactor propre avec @dataclass Product
-
-
-Installation & exécution des tests
-    Installer les dépendances:
-        pip install pytest coverage
-
-Lancer tous les tests:
-    python -m pytest -q
 Tous les tests doivent passer.
 
--Générer le rapport de couverture-
+## Rapport de couverture
+
+Générer le rapport de couverture :
+
+```bash
 python -m coverage run -m pytest -q
 python -m coverage html
+```
 
-Ouvre ensuite le fichier :
+Ouvrir le rapport HTML :
 
+```
 htmlcov/index.html
+```
